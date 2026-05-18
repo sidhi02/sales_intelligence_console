@@ -22,7 +22,7 @@ st.set_page_config(
 # Premium Global CSS Overhaul (Aggressive Typography Scale & Dynamic Density)
 st.markdown("""
 <style>
-    @import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap');
+    @import url('https://fonts.googleapis.com/css2?family=Inter:wght=400;500;600;700&display=swap');
     
     /* GLOBAL TEXT SCALE & WHITESPACE MINIMIZATION */
     html, body, p, div, [data-testid="stWidgetLabel"], .stTabs button, .stButton button, label {
@@ -194,15 +194,14 @@ def load_data():
 
     df = pd.read_csv(DATA_PATH)
     df["Order_Date"] = pd.to_datetime(df["Order_Date"])
-
     return df
     
 @st.cache_data
 def load_customer_segments():
-    try:
-        seg = pd.read_csv("data/customer_segments.csv")
-    except Exception:
-        seg = pd.read_csv("customer_segments.csv")
+    BASE_DIR = Path(__file__).resolve().parent
+    SEG_PATH = BASE_DIR.parent / "data" / "customer_segments.csv"
+
+    seg = pd.read_csv(SEG_PATH)
     if "Last_Order_Date" in seg.columns:
         seg["Last_Order_Date"] = pd.to_datetime(seg["Last_Order_Date"])
     return seg
@@ -304,7 +303,7 @@ def ai_answer(question, data, seg_data):
     if any(k in q for k in ["margin", "profit", "earnings", "leakage", "loss"]):
         loss_df = data[data["Profit"] < 0]
         return f"📊 <b>Financial Health Parameters:</b> Net operating margins sit at <b>{margin:.2f}%</b> on absolute profits of <b>{money(profit)}</b>.<br>⚠️ There are currently <b>{loss_df.shape[0]}</b> transactional nodes functioning at an operating loss."
-        
+    
     return f"📌 <b>Data Slice Scan Summary:</b> under current filter structures, the matrix displays <b>{money(sales)}</b> in total gross revenue, spanning <b>{data['Order_ID'].nunique():,}</b> validated invoices, operating at an overall efficiency margin of <b>{margin:.2f}%</b>."
 
 # Load Assets
@@ -395,13 +394,13 @@ with tab1:
     st.markdown('</div>', unsafe_allow_html=True)
     
     st.markdown('<div class="content-block">', unsafe_allow_html=True)
-    monthly_sales = filtered.groupby(pd.Grouper(key="Order_Date", freq="M"))["Sales"].sum().reset_index()
+    monthly_sales = filtered.groupby(pd.Grouper(key="Order_Date", freq="ME"))["Sales"].sum().reset_index()
     monthly_sales.columns = ["ds", "y"]
 
     if prophet_available and len(monthly_sales) >= 12:
         model = Prophet(yearly_seasonality=True, weekly_seasonality=False, daily_seasonality=False)
         model.fit(monthly_sales)
-        future = model.make_future_dataframe(periods=6, freq="M")
+        future = model.make_future_dataframe(periods=6, freq="ME")
         forecast = model.predict(future)
         future_forecast = forecast[forecast["ds"] > monthly_sales["ds"].max()]
         
@@ -511,7 +510,7 @@ with tab4:
 # TAB 5: SALES ANOMALY DETECTION
 with tab5:
     st.markdown('<div class="content-block">', unsafe_allow_html=True)
-    ad = filtered.groupby(pd.Grouper(key="Order_Date", freq="M"))["Sales"].sum().reset_index()
+    ad = filtered.groupby(pd.Grouper(key="Order_Date", freq="ME"))["Sales"].sum().reset_index()
     ad.columns = ["Month", "Sales"]
     ad["Rolling_Avg"] = ad["Sales"].rolling(3).mean()
     ad["Rolling_Std"] = ad["Sales"].rolling(3).std()
@@ -528,7 +527,6 @@ with tab5:
     st.markdown('</div>', unsafe_allow_html=True)
     st.markdown('</div>', unsafe_allow_html=True)
 
-# TAB 6: DIAGNOSTIC AI CO-PILOT ASSISTANT
 # TAB 6: DIAGNOSTIC AI CO-PILOT ASSISTANT
 with tab6:
     st.markdown('<div class="content-block">', unsafe_allow_html=True)
@@ -600,4 +598,3 @@ with tab6:
         """, unsafe_allow_html=True)
         
     st.markdown('</div>', unsafe_allow_html=True)
-
