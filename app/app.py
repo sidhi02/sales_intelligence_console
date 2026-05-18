@@ -613,4 +613,4 @@ with tab6:
     ">
     🛒 Sales Intelligence Console • Created by Sidhi Deshmukh
     </div>
-    """, unsafe_allow_html=True
+    """, unsafe_allow_html=True)
