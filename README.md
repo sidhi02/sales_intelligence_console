@@ -124,7 +124,7 @@ The application transforms raw sales data into a professional analytics dashboar
 
 ---
 
-## 💬 AI Recommendation Assistant
+## 💬 Smart Recommendation Assistant
 
 - Automated business recommendations
 - Sales-based insights
@@ -311,7 +311,7 @@ sales-intelligence-console/
 ## Clone Repository
 
 ```bash
-git clone https://github.com/sidhi02/sales-intelligence-console.git
+git clone https://github.com/sidhi02/sales_intelligence_console.git
 ```
 
 ---
