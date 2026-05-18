@@ -185,7 +185,7 @@ sales-intelligence-console/
 ├── README.md
 ├── data/
 │   └── sales_data.csv
-├── assets/
+├── notebooks/
 │   ├── tableau_dashboard.png
 │   ├── executive_summary.png
 │   ├── profit_architecture.png
