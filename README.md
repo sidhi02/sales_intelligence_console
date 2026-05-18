@@ -1,155 +1,250 @@
 # 🛒 Sales Intelligence Console
 
-## 📌 Project Description
+## 📌 Project Overview
 
-An enterprise-grade Sales Intelligence Dashboard built using Streamlit, Plotly, and Python that transforms raw e-commerce data into interactive business intelligence through KPI tracking, predictive revenue forecasting, stock fulfillment analysis, profit architecture monitoring, customer segmentation, process deviation detection, and AI-style recommendation insights.
+Sales Intelligence Console is an interactive business analytics platform designed to analyze e-commerce sales data and generate actionable insights through forecasting, customer segmentation, KPI tracking, and sales performance analysis.
 
----
-
-# 🚀 Project Overview
-
-Sales Intelligence Console is a multi-module business analytics platform designed to simulate a real-world enterprise intelligence system.
-
-The dashboard converts raw e-commerce sales data into actionable business insights through advanced analytics, forecasting pipelines, operational intelligence modules, customer clustering systems, anomaly monitoring, and AI-powered recommendation workflows.
-
-The project combines:
-- Business Intelligence
-- Data Analytics
-- Forecasting
-- Interactive Dashboarding
-- Customer Segmentation
-- Operational Monitoring
-- AI-style Insight Systems
-- Enterprise UI/UX Design
+The project combines Tableau dashboards with a fully interactive Streamlit application to create a complete end-to-end business intelligence solution.
 
 ---
 
-# ✨ Core Dashboard Modules
+# 🚀 Project Components
 
-## 📊 Executive Summary
-- Revenue monitoring dashboard
-- Invoice and client tracking
-- Monthly sales trend visualization
+This project includes two separate analytics systems:
+
+## 📊 Tableau Dashboard
+
+An interactive Tableau dashboard developed for:
+- Sales performance monitoring
 - Regional sales analysis
-- Product category performance tracking
-- Sub-category sales intelligence
-- KPI cards and business metrics
+- Product category analysis
+- Monthly revenue tracking
+- Interactive business visualization
+- Executive KPI reporting
 
 ---
 
-## 🤖 Predictive Revenue Forecasting
-- 6-month predictive revenue projection
-- Actual vs forecast comparison
-- Revenue pipeline trend analysis
-- Forecast-driven business intelligence
-- Growth trajectory visualization
+## 🖥️ Streamlit Analytics Application
+
+A multi-module Streamlit application developed for:
+- Sales forecasting
+- Customer segmentation
+- KPI analytics
+- Profit analysis
+- Operational insights
+- Interactive business reporting
+
+The application transforms raw sales data into a professional analytics dashboard with forecasting and customer intelligence capabilities.
 
 ---
 
-## 📦 Stock Fulfillment Intelligence
-- Top-performing inventory analysis
-- Product demand monitoring
-- Inventory optimization insights
-- Operational fulfillment recommendations
-- Supply chain intelligence indicators
+# ✨ Analytics Modules
+
+## 📊 Executive Dashboard
+
+- Revenue monitoring
+- Order tracking
+- Regional sales analysis
+- Monthly sales trends
+- Product category insights
+- KPI summary metrics
+- Sub-category performance analysis
 
 ---
 
-## 💰 Profit Architecture Engine
-- Net earnings monitoring
-- Margin index analysis
-- Average order value tracking
-- Profit contribution by category
-- Regional profit margin comparison
-- Leakage node detection
+## 🔮 Sales Forecasting Module
+
+- 6-month sales forecasting
+- Historical trend analysis
+- Actual vs predicted sales comparison
+- Revenue growth visualization
+- Forecast trend monitoring
+
+### Model Used
+- Prophet Forecasting Model
+
+### Features Used
+- Order Date
+- Historical Sales
+- Revenue Trends
+- Time-Series Aggregation
 
 ---
 
-## 👥 Client Cluster Intelligence
-- Customer segmentation analytics
-- Loyalty-based customer grouping
-- VIP customer analysis
-- Cohort classification engine
-- Consumer behavior intelligence
-- Audience clustering system
+## 📦 Inventory & Product Insights
+
+- Product performance analysis
+- High-selling product tracking
+- Category-level insights
+- Demand trend analysis
+- Inventory-related business insights
 
 ---
 
-## 🚨 Process Deviation Monitoring
-- Rolling deviation analysis
-- Operational anomaly detection
-- Volatility tracking
-- Business instability monitoring
-- Performance deviation visualization
-- Issue detection framework
+## 💰 Profit Analysis Module
+
+- Profit tracking
+- Regional profit comparison
+- Margin analysis
+- Average order value analysis
+- Revenue contribution insights
 
 ---
 
-## 💬 AI Data Assistant
-- AI-style business recommendations
-- Automated diagnostics engine
-- Quick business insight generation
-- Interactive query system
-- Strategic decision-support suggestions
-- Conversational analytics workflow
+## 👥 Customer Segmentation Module
+
+- Customer grouping analysis
+- Customer purchase behavior tracking
+- Revenue-based segmentation
+- Customer value analysis
+- Segment-wise business insights
+
+### Model Used
+- KMeans Clustering
+
+### Features Used
+- Total Sales
+- Purchase Frequency
+- Customer Recency
+- Order Volume
+
+### Preprocessing Techniques
+- StandardScaler normalization
+- Customer aggregation workflows
 
 ---
 
-# 🧠 Dashboard Architecture
+## 🚨 Sales Trend Monitoring
 
-| Module | Purpose |
-|---|---|
-| Executive Summary | High-level business KPI monitoring |
-| Revenue Forecasting | Predictive sales intelligence |
-| Stock Fulfillment | Inventory optimization analytics |
-| Profit Architecture | Profitability monitoring system |
-| Client Clusters | Customer intelligence segmentation |
-| Process Deviations | Operational anomaly detection |
-| AI Data Assistant | AI-powered business recommendations |
+- Sales deviation tracking
+- Monthly fluctuation analysis
+- Trend comparison
+- Performance monitoring
+- Business variation insights
 
 ---
 
-# 📊 Dashboard Preview
+## 💬 AI Recommendation Assistant
 
-## 🔹 Original Tableau Dashboard
+- Automated business recommendations
+- Sales-based insights
+- Business performance suggestions
+- Data-driven observations
+- Interactive analytics insights
+
+---
+
+# 🧹 Data Processing Pipeline
+
+The project includes a complete data preprocessing workflow for preparing raw e-commerce data for analytics and forecasting.
+
+## Data Preparation Steps
+
+- Missing value handling
+- Duplicate removal
+- Date formatting
+- Feature preprocessing
+- Data transformation
+- Aggregation workflows
+- Structured dataset preparation
+
+---
+
+# 🧠 Project Workflow
+
+```text
+Raw Sales Dataset
+        ↓
+Data Cleaning & Preprocessing
+        ↓
+Exploratory Data Analysis
+        ↓
+KPI & Sales Analytics
+        ↓
+Forecasting & Customer Segmentation
+        ↓
+Interactive Tableau Dashboard
+        ↓
+Streamlit Analytics Application
+```
+
+---
+
+# 📊 Tableau Dashboard Preview
+
+## 🔹 Tableau Sales Dashboard
+
 <img width="1006" height="756" alt="E-commerce sales analytics dashboard" src="https://github.com/user-attachments/assets/570b3251-4a85-4bff-98b9-21a448718b83" />
 
+---
+
+# 🌐 Live Tableau Dashboard
+
+🔗 [View Interactive Tableau Dashboard](https://public.tableau.com/views/Ecommercesalesanalyticsdashboard/Dashboard12?:language=en-US&publish=yes&:sid=&:redirect=auth&:display_count=n&:origin=viz_share_link)
 
 ---
 
-## 🔹 Executive Summary Module
-<img width="1456" height="611" alt="exexc" src="https://github.com/user-attachments/assets/99389b12-29a8-4399-ba10-0c83c11736a5" />
+# 🖥️ Streamlit Application Preview
 
+## 🔹 Executive Dashboard
+
+<img width="1456" height="611" alt="executive" src="https://github.com/user-attachments/assets/99389b12-29a8-4399-ba10-0c83c11736a5" />
 
 ---
 
-## 🔹 Stock Fulfillment Module
+## 🔹 Inventory & Product Insights
+
 <img width="1444" height="596" alt="stock" src="https://github.com/user-attachments/assets/fc2a25d0-0413-420f-9239-d6db245be1ce" />
 
 ---
 
-## 🔹 Profit Architecture Module
+## 🔹 Profit Analysis Module
+
 <img width="1448" height="572" alt="profit" src="https://github.com/user-attachments/assets/6ad899c6-3261-4008-a7b0-5f2dd2e7f03b" />
 
-
 ---
 
-## 🔹 Client Cluster Intelligence
+## 🔹 Customer Segmentation
+
 <img width="1448" height="558" alt="client" src="https://github.com/user-attachments/assets/9051681d-b42d-46a4-8188-6373464e2766" />
 
-
 ---
 
-## 🔹 Process Deviation Monitoring
+## 🔹 Sales Trend Monitoring
+
 <img width="1449" height="612" alt="process" src="https://github.com/user-attachments/assets/c4205966-09cb-4d2c-b85e-dcbaf168fac2" />
 
+---
+
+## 🔹 AI Recommendation Assistant
+
+<img width="1444" height="776" alt="data" src="https://github.com/user-attachments/assets/62611d58-39b2-4763-be56-a42d064ea64a" />
 
 ---
 
-## 🔹 AI Data Assistant
-![AI Data Assistant]
-<img width="1444" height="776" alt="data" src="https://github.com/user-attachments/assets/62611d58-39b2-4763-be56-a42d064ea64a" />
+# 📌 Key Features
 
+- Interactive Tableau dashboard
+- Streamlit analytics application
+- Sales forecasting using Prophet
+- Customer segmentation using KMeans
+- KPI monitoring system
+- Regional sales analysis
+- Profitability insights
+- Product performance tracking
+- Interactive business visualizations
+- Professional dashboard UI/UX
+
+---
+
+# 📈 Dataset Insights
+
+- Multi-region sales analysis
+- Customer-level transaction analysis
+- Product category monitoring
+- Time-series sales tracking
+- Monthly revenue trend analysis
+- Customer purchasing behavior analysis
 
 ---
 
@@ -160,18 +255,29 @@ The project combines:
 - Pandas
 - NumPy
 
-## Dashboard & Visualization
+---
+
+## Machine Learning
+- Prophet
+- Scikit-learn
+- KMeans Clustering
+- StandardScaler
+
+---
+
+## Visualization & Dashboards
 - Streamlit
 - Plotly
+- Tableau
+- Matplotlib
+- Seaborn
 
-## Machine Learning & Forecasting
-- Scikit-learn
-- Prophet
+---
 
-## UI/UX & Styling
+## UI/UX
 - Custom CSS
-- Enterprise Dashboard Styling
-- Responsive Layout Architecture
+- Responsive Dashboard Design
+- Interactive Visual Styling
 
 ---
 
@@ -185,13 +291,24 @@ sales-intelligence-console/
 ├── README.md
 ├── data/
 │   └── sales_data.csv
+│
+├── tableau/
+│   └── tableau_dashboard.twb
+│
 ├── notebooks/
-│   ├── tableau_dashboard.png
+│   ├── 01_data_cleaning.ipynb
+│   ├── 02_eda_analysis.ipynb
+│   ├── 03_sales_forecasting.ipynb
+│   └── 04_customer_segmentation.ipynb
+│
+├── screenshots/
 │   ├── executive_summary.png
-│   ├── profit_architecture.png
-│   ├── client_clusters.png
-│   ├── process_deviations.png
-│   └── ai_data_assistant.png
+│   ├── inventory_insights.png
+│   ├── profit_analysis.png
+│   ├── customer_segmentation.png
+│   ├── sales_monitoring.png
+│   └── ai_recommendations.png
+│
 └── .gitignore
 ```
 
@@ -231,63 +348,36 @@ streamlit run app.py
 
 ---
 
-# 🌐 Live Deployment
+# 🌐 Live Application
 
-🔗 [Launch Sales Intelligence Console](https://salesintelligenceconsole-cdyayxztihflc4rf7wzynn.streamlit.app/)
-
----
-
-# 📈 Business Insights Generated
-
-- Identifies top-performing operational regions
-- Detects highest revenue-generating categories
-- Tracks long-term sales growth patterns
-- Forecasts future business performance
-- Monitors customer segment contribution
-- Detects operational instability and anomalies
-- Generates AI-style business recommendations
-- Supports strategic enterprise decision-making
-
----
-
-# 🎯 Business Value
-
-This dashboard enables organizations to:
-- Monitor operational performance
-- Improve profitability
-- Optimize inventory flow
-- Understand customer behavior
-- Detect performance anomalies
-- Generate intelligent recommendations
-- Make data-driven business decisions
-
-through an interactive enterprise intelligence platform.
+🔗 https://salesintelligenceconsole-cdyayxztihflc4rf7wzynn.streamlit.app/
 
 ---
 
 # 🔥 Project Highlights
 
-- Enterprise-grade dashboard architecture
-- Professional multi-module UI
-- AI-style recommendation engine
-- Predictive forecasting system
-- Interactive operational analytics
-- Customer intelligence framework
-- Real-world business intelligence workflow
-- Portfolio-ready professional design
+- End-to-end analytics workflow
+- Tableau + Streamlit integration
+- Forecasting using Prophet
+- Customer segmentation using KMeans
+- Interactive dashboard system
+- Professional UI/UX design
+- Time-series sales analysis
+- Business KPI monitoring
+- Portfolio-ready analytics project
 
 ---
 
-# ⭐ Future Enhancements
+# ⭐ Future Improvements
 
 - Real-time database integration
-- Cloud deployment infrastructure
-- Advanced ML forecasting models
-- NLP-powered AI business assistant
-- Automated anomaly detection engine
-- PDF business report exports
-- User authentication system
-- Real-time streaming analytics
+- Advanced forecasting models
+- Automated reporting system
+- User authentication
+- Cloud deployment enhancements
+- PDF export functionality
+- Real-time sales monitoring
+- API integrations
 
 ---
 
@@ -295,5 +385,8 @@ through an interactive enterprise intelligence platform.
 
 ## Sidhi Deshmukh
 
-- GitHub: https://github.com/your-username
-- LinkedIn: https://linkedin.com/in/your-profile
+### GitHub
+https://github.com/sidhi02
+
+### LinkedIn
+Add-your-linkedin-profile-here
