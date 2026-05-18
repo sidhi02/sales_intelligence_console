@@ -387,6 +387,3 @@ streamlit run app.py
 
 ### GitHub
 https://github.com/sidhi02
-
-### LinkedIn
-Add-your-linkedin-profile-here
