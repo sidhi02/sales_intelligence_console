@@ -145,6 +145,13 @@ AI-Style Recommendation Engine
 
 ---
 
+# 🌐 Live Tableau Dashboard
+
+🔗 [View Interactive Tableau Dashboard]([https://public.tableau.com/views/Ecommercesalesanalyticsdashboard/Dashboard12?:language=en-US&publish=yes&:sid=&:redirect=auth&:display_count=n&:origin=viz_share_link])
+
+---
+
+
 # 🖥️ Streamlit Application Preview
 
 ## 🔹 Executive Intelligence Module
