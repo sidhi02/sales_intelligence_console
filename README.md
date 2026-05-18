@@ -112,41 +112,36 @@ The project combines:
 # 📊 Dashboard Preview
 
 ## 🔹 Original Tableau Dashboard
-![Tableau Dashboard]
 <img width="1006" height="756" alt="E-commerce sales analytics dashboard" src="https://github.com/user-attachments/assets/570b3251-4a85-4bff-98b9-21a448718b83" />
 
 
 ---
 
 ## 🔹 Executive Summary Module
-![Executive Summary]
 <img width="1456" height="611" alt="exexc" src="https://github.com/user-attachments/assets/99389b12-29a8-4399-ba10-0c83c11736a5" />
 
 
 ---
 
 ## 🔹 Stock Fulfillment Module
-![Stock Fulfillment Summary]
 <img width="1444" height="596" alt="stock" src="https://github.com/user-attachments/assets/fc2a25d0-0413-420f-9239-d6db245be1ce" />
 
 ---
 
 ## 🔹 Profit Architecture Module
-![Profit Architecture]
 <img width="1448" height="572" alt="profit" src="https://github.com/user-attachments/assets/6ad899c6-3261-4008-a7b0-5f2dd2e7f03b" />
 
 
 ---
 
 ## 🔹 Client Cluster Intelligence
-![Client Clusters]
 <img width="1448" height="558" alt="client" src="https://github.com/user-attachments/assets/9051681d-b42d-46a4-8188-6373464e2766" />
 
 
 ---
 
 ## 🔹 Process Deviation Monitoring
-![Process Deviations]<img width="1449" height="612" alt="process" src="https://github.com/user-attachments/assets/c4205966-09cb-4d2c-b85e-dcbaf168fac2" />
+<img width="1449" height="612" alt="process" src="https://github.com/user-attachments/assets/c4205966-09cb-4d2c-b85e-dcbaf168fac2" />
 
 
 ---
