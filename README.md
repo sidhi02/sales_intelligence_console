@@ -221,9 +221,7 @@ streamlit run app.py
 
 # 🌐 Live Deployment
 
-```text
-[https://your-streamlit-app-link.streamlit.app/
-](https://salesintelligenceconsole-cdyayxztihflc4rf7wzynn.streamlit.app)```
+(https://salesintelligenceconsole-cdyayxztihflc4rf7wzynn.streamlit.app)
 
 ---
 
