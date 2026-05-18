@@ -598,3 +598,19 @@ with tab6:
         """, unsafe_allow_html=True)
         
     st.markdown('</div>', unsafe_allow_html=True)
+    st.markdown('</div>', unsafe_allow_html=True)
+    # FOOTER
+    st.markdown("""
+    <div style="
+    text-align:center;
+    padding-top:14px;
+    padding-bottom:6px;
+    font-size:11px;
+    color:#64748b;
+    font-weight:500;
+    border-top:1px solid #e2e8f0;
+    margin-top:10px;
+    ">
+    🛒 Sales Intelligence Console • Created by Sidhi Deshmukh
+    </div>
+    """, unsafe_allow_html=True
