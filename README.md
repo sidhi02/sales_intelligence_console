@@ -292,22 +292,14 @@ sales-intelligence-console/
 ├── data/
 │   └── sales_data.csv
 │
-├── tableau/
-│   └── tableau_dashboard.twb
-│
+├── dashboard/
+│   ├── tableau_dashboard.twb
+│   └── E-commerce sales analytics dashboard.png
 ├── notebooks/
 │   ├── 01_data_cleaning.ipynb
 │   ├── 02_eda_analysis.ipynb
 │   ├── 03_sales_forecasting.ipynb
 │   └── 04_customer_segmentation.ipynb
-│
-├── screenshots/
-│   ├── executive_summary.png
-│   ├── inventory_insights.png
-│   ├── profit_analysis.png
-│   ├── customer_segmentation.png
-│   ├── sales_monitoring.png
-│   └── ai_recommendations.png
 │
 └── .gitignore
 ```
