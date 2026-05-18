@@ -233,7 +233,7 @@ streamlit run app.py
 
 # 🌐 Live Deployment
 
-[https://salesintelligenceconsole-cdyayxztihflc4rf7wzynn.streamlit.app/]
+https://salesintelligenceconsole-cdyayxztihflc4rf7wzynn.streamlit.app/
 
 ---
 
