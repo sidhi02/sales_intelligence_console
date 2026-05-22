@@ -136,7 +136,7 @@ The application transforms raw sales data into a professional analytics dashboar
 
 # 🧹 Data Processing Pipeline
 
-The project includes a complete data preprocessing workflow for preparing raw e-commerce data for analytics and forecasting.
+The project includes a complete data preprocessing workflow for preparing raw e-commerce data for analytics and forecasting
 
 ## Data Preparation Steps
 
